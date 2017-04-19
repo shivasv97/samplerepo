@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			FOLLOW
+		</title>
+	</head>
+	<body>
+		<% include templates/nav.ejs %><br/>
+
+		<!--<p><%= users.length %></p>-->
+
+		<h2>All users</h2>
+		<% for(var i = 0; i < users.length; i++){ %>
+				<h3> <%= users[i]._id %> </h3>
+		<% } %>
+
+		<br/>
+		<h2>Enter the persons ID you want to follow</h2><br/>
+
+		<form action="/user/follow" method="POST">
+  		<input type="text" placeholder="email" name="email"><br/><br/>
+  		<button type="submit">FOLLOW</button>
+  		<br/>
+  		<br/>
+  		<a href="/user/upload"><h3>BACK</h3></a>
+	</body>
+</html>

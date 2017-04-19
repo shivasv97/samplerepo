@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>upload</title>
+  <style>
+      h3{
+        display:inline;
+      }
+  </style>
+</head>
+<body>
+
+  <% include templates/nav.ejs %><br/>
+
+  <a href="/user/getImages"><h3>WALL</h3></a> |  
+    <a href="/user/logout"><h3>LOG-OUT</h3></a> |
+    <a href = "/user/follow"><h3>FOLLOW</h3></a> 
+
+    <br/>
+    <br/>
+
+  <form action="/user/upload" method="POST" enctype="multipart/form-data">
+    <fieldset width = "50%">
+    <legend> Upload an image </legend> 
+    <input type="file" name="avatar"> <br/><br/>
+    <input type="submit" value="POST">
+    </fieldset>
+    </form>
+    <br/>
+    <br/>
+</body>
+</html>

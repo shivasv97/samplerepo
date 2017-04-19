@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Images
+		</title>
+		<style>
+				div { 
+					margin :0 auto; 
+				}
+		</style>
+	</head>
+	<body>
+		<% include templates/nav.ejs %><br/>
+
+		<h1 align="center">YOUR IMAGES</h1>
+		<p> My images : <%= a.my %> </p>
+		<p> Total No. of images are <%= a.names.length %></p>
+		<% for(i = 0; i < a.names.length ; i++ ){%>
+				<% if(i == a.my){ %>
+					<h1 align = "center">FRIENDS IMAGES</h1>
+				<% } %>
+			<!--<p> <%= typeof a.names[i] %> -->
+		<div>
+		<img src = <%= "http://localhost:3000/"  + a.names[i] %> width = 700 height = 700/><br/><br/>
+		</div>
+		<% } %>
+		<br/>
+		<br/>
+		<a href = "/user/upload"><h3>BACK</h3></a><br/>
+	</body>
+</html>

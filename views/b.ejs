@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Register
+		</title>
+	</head>
+	<body>
+		<% include templates/nav.ejs %><br/>
+		<h2> REGISTER NOW!! </h2>
+		<form action="/user/registered" method="POST">
+		<input type="email" placeholder="Email" name="email"><br/><br/>
+  		<input type="text" placeholder="name" name="name"><br/><br/>
+  		<input type="password" placeholder="password" name="pass"><br/><br/>
+  		<input type = "Number", placeholder = "Age", name = "age"><br/><br/>
+  		<button type="submit">REGISTER</button>
+  		<br/>
+  		<br/>
+  		<a href="/user/login"><h3>Login</h3></a>
+	</body>
+</html>

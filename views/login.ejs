@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			LOGIN
+		</title>
+	</head>
+	<body>
+		<% include templates/nav.ejs %><br/>
+		<h2> LOG-IN </h2>
+		<form action="/user/postlogin" method="POST">
+		<input type="email" placeholder="Email" name="email"><br/><br/>
+  		<input type="password" placeholder="password" name="pass"><br/><br/>
+  		<button type="submit">Submit</button>
+	</body>
+</html>
