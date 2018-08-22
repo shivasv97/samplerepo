@@ -1,2 +1,2 @@
-# samplerepo
-CCBD photOn
+# PhotOn
+CCBD PhotOn
